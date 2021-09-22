@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgb(0, 145, 255),purple,white,#00807a);
+} */
+.web_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgb(0, 145, 255),purple,white,#00807a);
+}
+
+.card_home {
+    position: relative;
+    width: 645px;
+    height: 380px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgb(170, 55, 78), #491f8f);
+    margin: 9px 100px;
+}
+
+.card_home img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 365px;
+    transition: 0.5s;
+    border-radius: 8%;
+}
+
+.card_home:hover img {
+    left: 95%;
+    height: 200px;
+}
+
+.card_home .content_home {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card_home:hover .content_home {
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+
+.content_home h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.content_home p {
+    color: white;
+    margin-top: 48px;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.content_home a {
+    text-decoration: none;
+    font-size: 21px;
+    border: 1px solid crimson;
+    background: transparent;
+    color: white;
+    border-radius: 13px;
+    padding: 5px 8px;
+    margin: 5px 2px;
+}
+
+.content_home a:hover {
+    cursor: pointer;
+    background: crimson;
+    box-shadow: -1px 2px 50px crimson;
+
+}
+.heading{
+    height: 100px;
+  background: #0b1522;
+  color: white;
+  cursor: pointer;
+
+}
+.heading h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 25%;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Grechen Fuemen', cursive;
+}
+#blue{
+    color: rgb(0, 145, 255);
+}
+#purple{
+    color: purple;
+}
+#white{
+    color: white;
+}
+#green{
+    color: #00807a;
+}
+
+
+/* Download_sec */
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, rgb(209, 45, 78), orange, rgb(0, 128, 100));
+}
+
+.home_sec {
+    display: flex;
+    position: relative;
+    left: 6%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1900px;
+    flex-wrap: wrap;
+    padding: -1px 60px;
+}
+
+.home_sec .cards {
+    position: relative;
+    width: 325px;
+    height: 365px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.home_sec .cards .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.home_sec .cards:hover .box {
+    transform: translate(50px, -50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.box{
+    background: #0b1522;
+}
+
+.card img {
+    height: 244px;
+    width: 269px;
+    border-radius: 11px;
+}
+
+.card h3 {
+
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-left: 57px;
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background: transparent;
+    padding: 9px 21px;
+width: 150px;
+font-weight: bold;
+}
+
+.btn a:hover {
+    background: green;
+    color: white;
+    box-shadow: -1px 2px 10px green;
+}
+
+.cards {
+    background: linear-gradient(135deg, rgb(170, 55, 78), #491f8f);
+}
+
+.btn {
+    position: relative;
+    /* visibility: hidden; */
+    top: 82%;
+    left: 30%;
+}
+
+.cards:hover {
+    visibility: visible;
+}
